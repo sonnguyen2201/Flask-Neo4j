@@ -4,6 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+flake8 = "*"
 
 [packages]
 flask = "*"
@@ -14,9 +15,12 @@ bcrypt = "*"
 cffi = "*"
 itsdangerous = "*"
 passlib = "*"
-py2neo = "*"
 pycparser = "*"
 six = "*"
+py2neo = "==2.0.8"
 
 [requires]
 python_version = "3.7"
+
+[scripts]
+app = "python ./run.py"
